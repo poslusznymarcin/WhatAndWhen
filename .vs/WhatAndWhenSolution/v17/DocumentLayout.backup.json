@@ -3,44 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF1BB446-ADA3-4972-AC8F-1C9F5E12296D}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\views\\task\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CF1BB446-ADA3-4972-AC8F-1C9F5E12296D}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\views\\task\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF1BB446-ADA3-4972-AC8F-1C9F5E12296D}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\views\\task\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CF1BB446-ADA3-4972-AC8F-1C9F5E12296D}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\views\\task\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\views\\task\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\views\\task\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF1BB446-ADA3-4972-AC8F-1C9F5E12296D}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\views\\task\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CF1BB446-ADA3-4972-AC8F-1C9F5E12296D}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\views\\task\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\views\\task\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\views\\task\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF1BB446-ADA3-4972-AC8F-1C9F5E12296D}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CF1BB446-ADA3-4972-AC8F-1C9F5E12296D}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\views\\task\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\views\\task\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF1BB446-ADA3-4972-AC8F-1C9F5E12296D}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\models\\taskviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF1BB446-ADA3-4972-AC8F-1C9F5E12296D}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\models\\taskviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\views\\task\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\views\\task\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF1BB446-ADA3-4972-AC8F-1C9F5E12296D}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF1BB446-ADA3-4972-AC8F-1C9F5E12296D}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\views\\task\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\views\\task\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF1BB446-ADA3-4972-AC8F-1C9F5E12296D}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CF1BB446-ADA3-4972-AC8F-1C9F5E12296D}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\models\\taskviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\models\\taskviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF1BB446-ADA3-4972-AC8F-1C9F5E12296D}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF1BB446-ADA3-4972-AC8F-1C9F5E12296D}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF1BB446-ADA3-4972-AC8F-1C9F5E12296D}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF1BB446-ADA3-4972-AC8F-1C9F5E12296D}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF1BB446-ADA3-4972-AC8F-1C9F5E12296D}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CF1BB446-ADA3-4972-AC8F-1C9F5E12296D}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|c:\\users\\poslu\\onedrive\\pulpit\\studia\\asp\\whatandwhensolution\\whatandwhen\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39C8265A-9766-40ED-84C2-2060CF74BF88}|WhatAndWhen\\WhatAndWhen.csproj|solutionrelative:whatandwhen\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,39 +58,150 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "WhatAndWhen\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "WhatAndWhen\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABaAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Task\\Details.cshtml",
+              "RelativeDocumentMoniker": "WhatAndWhen\\Views\\Task\\Details.cshtml",
+              "ToolTip": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Task\\Details.cshtml*",
+              "RelativeToolTip": "WhatAndWhen\\Views\\Task\\Details.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-31T19:05:50.568Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-01-31T21:57:46.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Task\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WhatAndWhen\\Views\\Task\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Task\\Edit.cshtml",
+              "RelativeToolTip": "WhatAndWhen\\Views\\Task\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-31T21:51:48.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Task\\Delete.cshtml",
+              "RelativeDocumentMoniker": "WhatAndWhen\\Views\\Task\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Task\\Delete.cshtml",
+              "RelativeToolTip": "WhatAndWhen\\Views\\Task\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-31T21:51:04.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "WhatAndWhen\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "WhatAndWhen\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T21:31:37.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WhatAndWhen\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WhatAndWhen\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-31T21:30:04.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Task\\Index.cshtml",
+              "RelativeDocumentMoniker": "WhatAndWhen\\Views\\Task\\Index.cshtml",
+              "ToolTip": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Task\\Index.cshtml",
+              "RelativeToolTip": "WhatAndWhen\\Views\\Task\\Index.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAACQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-31T21:25:53.065Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "TaskViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Models\\TaskViewModel.cs",
-              "RelativeDocumentMoniker": "WhatAndWhen\\Models\\TaskViewModel.cs",
-              "ToolTip": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Models\\TaskViewModel.cs",
-              "RelativeToolTip": "WhatAndWhen\\Models\\TaskViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T19:08:54.459Z",
-              "IsPinned": true,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Task\\Create.cshtml",
+              "RelativeDocumentMoniker": "WhatAndWhen\\Views\\Task\\Create.cshtml",
+              "ToolTip": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Task\\Create.cshtml",
+              "RelativeToolTip": "WhatAndWhen\\Views\\Task\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-31T21:25:40.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "TaskViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Models\\TaskViewModel.cs",
+              "RelativeDocumentMoniker": "WhatAndWhen\\Models\\TaskViewModel.cs",
+              "ToolTip": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Models\\TaskViewModel.cs",
+              "RelativeToolTip": "WhatAndWhen\\Models\\TaskViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T21:24:26.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "WhatAndWhen\\Controllers\\TaskController.cs",
+              "ToolTip": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Controllers\\TaskController.cs*",
+              "RelativeToolTip": "WhatAndWhen\\Controllers\\TaskController.cs*",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAswHQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T21:23:04.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WhatAndWhen\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WhatAndWhen\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-31T21:21:27.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "WhatAndWhen\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "WhatAndWhen\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-31T21:21:22.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "WhatAndWhen\\Views\\_ViewImports.cshtml",
@@ -90,99 +209,7 @@
               "RelativeToolTip": "WhatAndWhen\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-31T19:47:19.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Task\\Edit.cshtml",
-              "RelativeDocumentMoniker": "WhatAndWhen\\Views\\Task\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Task\\Edit.cshtml*",
-              "RelativeToolTip": "WhatAndWhen\\Views\\Task\\Edit.cshtml*",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACcAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-31T19:37:33.854Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Task\\Create.cshtml",
-              "RelativeDocumentMoniker": "WhatAndWhen\\Views\\Task\\Create.cshtml",
-              "ToolTip": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Task\\Create.cshtml",
-              "RelativeToolTip": "WhatAndWhen\\Views\\Task\\Create.cshtml",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAACAAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-31T19:11:53.647Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Task\\Index.cshtml",
-              "RelativeDocumentMoniker": "WhatAndWhen\\Views\\Task\\Index.cshtml",
-              "ToolTip": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Task\\Index.cshtml",
-              "RelativeToolTip": "WhatAndWhen\\Views\\Task\\Index.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-31T19:11:34.307Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TaskController.cs",
-              "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Controllers\\TaskController.cs",
-              "RelativeDocumentMoniker": "WhatAndWhen\\Controllers\\TaskController.cs",
-              "ToolTip": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Controllers\\TaskController.cs*",
-              "RelativeToolTip": "WhatAndWhen\\Controllers\\TaskController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T19:09:32.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "WhatAndWhen\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "WhatAndWhen\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-31T19:20:51.844Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "WhatAndWhen\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "WhatAndWhen\\Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T19:19:04.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Program.cs",
-              "RelativeDocumentMoniker": "WhatAndWhen\\Program.cs",
-              "ToolTip": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\Program.cs",
-              "RelativeToolTip": "WhatAndWhen\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T19:20:14.569Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T21:21:20.997Z"
             }
           ]
         }
