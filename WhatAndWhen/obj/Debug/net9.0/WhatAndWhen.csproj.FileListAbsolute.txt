@@ -213,3 +213,5 @@ C:\Users\poslu\OneDrive\Pulpit\Studia\ASP\WhatAndWhenSolution\WhatAndWhen\obj\De
 C:\Users\poslu\OneDrive\Pulpit\Studia\ASP\WhatAndWhenSolution\WhatAndWhen\obj\Debug\net9.0\WhatAndWhen.genruntimeconfig.cache
 C:\Users\poslu\OneDrive\Pulpit\Studia\ASP\WhatAndWhenSolution\WhatAndWhen\obj\Debug\net9.0\ref\WhatAndWhen.dll
 C:\Users\poslu\OneDrive\Pulpit\Studia\ASP\WhatAndWhenSolution\WhatAndWhen\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\poslu\OneDrive\Pulpit\Studia\ASP\WhatAndWhenSolution\WhatAndWhen\bin\Debug\net9.0\Castle.Core.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\ASP\WhatAndWhenSolution\WhatAndWhen\bin\Debug\net9.0\Moq.dll
