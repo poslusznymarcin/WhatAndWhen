@@ -27,11 +27,32 @@
         <select asp-for="Status" class="form-control" asp-items="@(new SelectList(new[] { "Pending", "Accepted", "Completed" }))"></select>
         <span asp-validation-for="Status" class="text-danger"></span>
     </div>
+
+    <!-- Dodajemy pole wyboru kategorii -->
+    <div class="form-group">
+        <label asp-for="CategoryId" class="control-label">Category</label>
+        <select asp-for="CategoryId" asp-items="ViewBag.Categories" class="form-control">
+            <option value="">-- Select Category --</option>
+        </select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>
+
+    <!-- Dodajemy pole wyboru priorytetu -->
+    <div class="form-group">
+        <label asp-for="PriorityId" class="control-label">Priority</label>
+        <select asp-for="PriorityId" asp-items="ViewBag.Priorities" class="form-control">
+            <option value="">-- Select Priority --</option>
+        </select>
+        <span asp-validation-for="PriorityId" class="text-danger"></span>
+    </div>
+
     <div class="form-group">
         <input type="submit" value="Create" class="btn btn-primary" />
     </div>
 </form>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

@@ -1,3 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+
+using WhatAndWhen.Services;
+using WhatAndWhenData;
+
 namespace WhatAndWhen
 {
     public class Program
@@ -5,9 +10,11 @@ namespace WhatAndWhen
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
+            builder.Services.AddTransient<ITaskService, TaskService>();
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<WhatAndWhenContext>(options =>
+                options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
 

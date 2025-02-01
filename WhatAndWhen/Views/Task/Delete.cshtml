@@ -35,6 +35,20 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Status)
         </dd>
+        <!-- Dodajemy wyświetlanie kategorii -->
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CategoryName)
+        </dd>
+        <!-- Dodajemy wyświetlanie priorytetu -->
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PriorityName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PriorityName)
+        </dd>
     </dl>
 
     <form asp-action="Delete">

@@ -1,21 +1,43 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WhatAndWhen.Models;
+using WhatAndWhen.Services;
+using WhatAndWhenData.Entities;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace WhatAndWhen.Controllers
 {
     public class TaskController : Controller
     {
-        static List<TaskViewModel> tasks = new List<TaskViewModel>();
+        private readonly ITaskService _taskService;
+
+        public TaskController(ITaskService taskService)
+        {
+            _taskService = taskService;
+        }
 
         [HttpGet]
         public IActionResult Index()
         {
+            var tasks = _taskService.GetAllTasks().Select(t => new TaskViewModel
+            {
+                Id = t.Id,
+                Name = t.Name,
+                Description = t.Description,
+                Deadline = t.Deadline,
+                Status = t.Status,
+                CategoryId = t.CategoryId,
+                CategoryName = t.Category?.Name,
+                PriorityId = t.PriorityId,
+                PriorityName = t.Priority?.Name
+            });
             return View(tasks);
         }
 
         [HttpGet]
         public IActionResult Create()
         {
+            ViewBag.Categories = new SelectList(_taskService.GetAllCategories(), "Id", "Name");
+            ViewBag.Priorities = new SelectList(_taskService.GetAllPriorities(), "Id", "Name");
             return View();
         }
 
@@ -24,12 +46,25 @@ namespace WhatAndWhen.Controllers
         {
             if (ModelState.IsValid)
             {
-                task.Id = tasks.Any() ? tasks.Max(x => x.Id ?? 0) + 1 : 1;
-                tasks.Add(task);
+                var taskEntity = new TaskEntity
+                {
+                    Name = task.Name,
+                    Description = task.Description,
+                    Deadline = task.Deadline,
+                    Status = task.Status,
+                    // Używamy operatora ?? do podania wartości domyślnej, jeśli CategoryId lub PriorityId są null
+                    CategoryId = task.CategoryId ?? 0,
+                    PriorityId = task.PriorityId ?? 0
+                };
+                _taskService.CreateTask(taskEntity);
                 return RedirectToAction("Index");
             }
-            return View(task); // Zwróć widok z błędami walidacji
+            // Jeśli ModelState nie jest ważny, odświeżamy listy kategorii i priorytetów
+            ViewBag.Categories = new SelectList(_taskService.GetAllCategories(), "Id", "Name", task.CategoryId);
+            ViewBag.Priorities = new SelectList(_taskService.GetAllPriorities(), "Id", "Name", task.PriorityId);
+            return View(task);
         }
+
         [HttpGet]
         public IActionResult Edit(int? id)
         {
@@ -38,12 +73,29 @@ namespace WhatAndWhen.Controllers
                 return NotFound();
             }
 
-            var task = tasks.FirstOrDefault(m => m.Id == id);
-            if (task == null)
+            var taskEntity = _taskService.GetTaskById(id);
+            if (taskEntity == null)
             {
                 return NotFound();
             }
-            return View(task);
+
+            var taskViewModel = new TaskViewModel
+            {
+                Id = taskEntity.Id,
+                Name = taskEntity.Name,
+                Description = taskEntity.Description,
+                Deadline = taskEntity.Deadline,
+                Status = taskEntity.Status,
+                CategoryId = taskEntity.CategoryId,
+                CategoryName = taskEntity.Category?.Name,
+                PriorityId = taskEntity.PriorityId,
+                PriorityName = taskEntity.Priority?.Name
+            };
+
+            ViewBag.Categories = new SelectList(_taskService.GetAllCategories(), "Id", "Name", taskViewModel.CategoryId);
+            ViewBag.Priorities = new SelectList(_taskService.GetAllPriorities(), "Id", "Name", taskViewModel.PriorityId);
+
+            return View(taskViewModel);
         }
 
         [HttpPost]
@@ -57,20 +109,26 @@ namespace WhatAndWhen.Controllers
 
             if (ModelState.IsValid)
             {
-                // Znajdź istniejące zadanie w liście
-                var existingTask = tasks.FirstOrDefault(m => m.Id == id);
-                if (existingTask != null)
+                var taskEntity = new TaskEntity
                 {
-                    // Aktualizuj właściwości istniejącego zadania
-                    existingTask.Name = task.Name;
-                    existingTask.Description = task.Description;
-                    existingTask.Deadline = task.Deadline;
-                    existingTask.Status = task.Status;
-                }
+                    Id = task.Id ?? 0,
+                    Name = task.Name,
+                    Description = task.Description,
+                    Deadline = task.Deadline,
+                    Status = task.Status,
+                    // Używamy operatora ?? do podania wartości domyślnej, jeśli CategoryId lub PriorityId są null
+                    CategoryId = task.CategoryId ?? 0,
+                    PriorityId = task.PriorityId ?? 0
+                };
+                _taskService.UpdateTask(taskEntity);
                 return RedirectToAction(nameof(Index));
             }
+            // Jeśli ModelState nie jest ważny, odświeżamy listy kategorii i priorytetów
+            ViewBag.Categories = new SelectList(_taskService.GetAllCategories(), "Id", "Name", task.CategoryId);
+            ViewBag.Priorities = new SelectList(_taskService.GetAllPriorities(), "Id", "Name", task.PriorityId);
             return View(task);
         }
+
         [HttpGet]
         public IActionResult Delete(int? id)
         {
@@ -79,26 +137,35 @@ namespace WhatAndWhen.Controllers
                 return NotFound();
             }
 
-            var task = tasks.FirstOrDefault(m => m.Id == id);
-            if (task == null)
+            var taskEntity = _taskService.GetTaskById(id);
+            if (taskEntity == null)
             {
                 return NotFound();
             }
 
-            return View(task);
+            var taskViewModel = new TaskViewModel
+            {
+                Id = taskEntity.Id,
+                Name = taskEntity.Name,
+                Description = taskEntity.Description,
+                Deadline = taskEntity.Deadline,
+                Status = taskEntity.Status,
+                CategoryId = taskEntity.CategoryId,
+                CategoryName = taskEntity.Category?.Name,
+                PriorityId = taskEntity.PriorityId,
+                PriorityName = taskEntity.Priority?.Name
+            };
+            return View(taskViewModel);
         }
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(int id)
         {
-            var task = tasks.FirstOrDefault(m => m.Id == id);
-            if (task != null)
-            {
-                tasks.Remove(task);
-            }
+            _taskService.DeleteTask(id);
             return RedirectToAction(nameof(Index));
         }
+
         [HttpGet]
         public IActionResult Details(int? id)
         {
@@ -107,13 +174,25 @@ namespace WhatAndWhen.Controllers
                 return NotFound();
             }
 
-            var task = tasks.FirstOrDefault(m => m.Id == id);
-            if (task == null)
+            var taskEntity = _taskService.GetTaskById(id);
+            if (taskEntity == null)
             {
                 return NotFound();
             }
 
-            return View(task);
+            var taskViewModel = new TaskViewModel
+            {
+                Id = taskEntity.Id,
+                Name = taskEntity.Name,
+                Description = taskEntity.Description,
+                Deadline = taskEntity.Deadline,
+                Status = taskEntity.Status,
+                CategoryId = taskEntity.CategoryId,
+                CategoryName = taskEntity.Category?.Name,
+                PriorityId = taskEntity.PriorityId,
+                PriorityName = taskEntity.Priority?.Name
+            };
+            return View(taskViewModel);
         }
     }
 }
