@@ -91,6 +91,35 @@ namespace WhatAndWhenData.Migrations
                         });
                 });
 
+            modelBuilder.Entity("WhatAndWhenData.Entities.SubtaskEntity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsCompleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("TaskId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TaskId");
+
+                    b.ToTable("subtask");
+                });
+
             modelBuilder.Entity("WhatAndWhenData.Entities.TaskEntity", b =>
                 {
                     b.Property<int>("Id")
@@ -129,6 +158,17 @@ namespace WhatAndWhenData.Migrations
                     b.HasIndex("PriorityId");
 
                     b.ToTable("task");
+                });
+
+            modelBuilder.Entity("WhatAndWhenData.Entities.SubtaskEntity", b =>
+                {
+                    b.HasOne("WhatAndWhenData.Entities.TaskEntity", "Task")
+                        .WithMany()
+                        .HasForeignKey("TaskId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Task");
                 });
 
             modelBuilder.Entity("WhatAndWhenData.Entities.TaskEntity", b =>

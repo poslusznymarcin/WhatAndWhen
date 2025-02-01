@@ -143,3 +143,4 @@ C:\Users\poslu\OneDrive\Pulpit\Studia\ASP\WhatAndWhenSolution\WhatAndWhenTestPro
 C:\Users\poslu\OneDrive\Pulpit\Studia\ASP\WhatAndWhenSolution\WhatAndWhenTestProject\obj\Debug\net9.0\WhatAndWhenTestProject.pdb
 C:\Users\poslu\OneDrive\Pulpit\Studia\ASP\WhatAndWhenSolution\WhatAndWhenTestProject\obj\Debug\net9.0\WhatAndWhenTestProject.genruntimeconfig.cache
 C:\Users\poslu\OneDrive\Pulpit\Studia\ASP\WhatAndWhenSolution\WhatAndWhenTestProject\obj\Debug\net9.0\ref\WhatAndWhenTestProject.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\ASP\WhatAndWhenSolution\WhatAndWhenTestProject\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

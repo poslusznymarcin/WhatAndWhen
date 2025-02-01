@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,14 +11,27 @@ namespace WhatAndWhenData
 {
     public class WhatAndWhenContext : DbContext
     {
+        public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<WhatAndWhenContext>
+        {
+            public WhatAndWhenContext CreateDbContext(string[] args)
+            {
+                var optionsBuilder = new DbContextOptionsBuilder<WhatAndWhenContext>();
+                // Użyj właściwego connection stringa z pliku konfiguracyjnego lub ustawienia domyślnego
+                optionsBuilder.UseSqlite("Data Source=your_database.db"); // Zmień na odpowiedni connection string
+
+                return new WhatAndWhenContext(optionsBuilder.Options);
+            }
+        }
         public WhatAndWhenContext(DbContextOptions<WhatAndWhenContext> options)
            : base(options)
         {
         }
 
+
         public DbSet<TaskEntity> Tasks { get; set; }
         public DbSet<CategoryEntity> Categories { get; set; }
         public DbSet<PriorityEntity> Priorities { get; set; }
+        public DbSet<SubtaskEntity> Subtasks { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
