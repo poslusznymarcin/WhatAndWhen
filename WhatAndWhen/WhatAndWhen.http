@@ -1,1 +1,55 @@
-﻿
+﻿@WhatAndWhen_HostAddress = https://localhost:7246
+
+
+
+
+
+
+POST {{WhatAndWhen_HostAddress}}/api/commentapi
+Content-Type: application/json
+
+{
+  //CommentEntity
+}
+
+###
+
+POST {{WhatAndWhen_HostAddress}}/api/commentapi
+Content-Type: application/json
+
+{
+    "content": "Testowy komentarz",
+    "taskId": 1,
+    "task": null
+}
+
+
+
+###
+
+POST {{WhatAndWhen_HostAddress}}/api/commentapi
+Content-Type: application/json
+
+{
+  //CommentEntity
+}
+
+###
+
+POST {{WhatAndWhen_HostAddress}}/api/commentapi
+Content-Type: application/json
+
+{
+  //CommentEntity
+}
+
+###
+
+POST {{WhatAndWhen_HostAddress}}/api/commentapi
+Content-Type: application/json
+
+{
+  //CommentEntity
+}
+
+###

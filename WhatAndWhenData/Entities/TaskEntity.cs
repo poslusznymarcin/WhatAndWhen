@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WhatAndWhenData.Entities;
 
 namespace WhatAndWhenData.Entities
 {
@@ -39,5 +40,7 @@ namespace WhatAndWhenData.Entities
         public int PriorityId { get; set; }
         [ForeignKey("PriorityId")]
         public PriorityEntity Priority { get; set; }
+        // Dodajemy właściwość nawigacyjną dla komentarzy
+        public ICollection<CommentEntity> Comments { get; set; }
     }
 }

@@ -3260,11 +3260,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhenData\\WhatAndWhenData.csproj",
+      "projectUniqueName": "C:\\Users\\poslu\\OneDrive\\Pulpit\\odnowegocommita\\WhatAndWhenSolution\\WhatAndWhenData\\WhatAndWhenData.csproj",
       "projectName": "WhatAndWhenData",
-      "projectPath": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhenData\\WhatAndWhenData.csproj",
+      "projectPath": "C:\\Users\\poslu\\OneDrive\\Pulpit\\odnowegocommita\\WhatAndWhenSolution\\WhatAndWhenData\\WhatAndWhenData.csproj",
       "packagesPath": "C:\\Users\\poslu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhenData\\obj\\",
+      "outputPath": "C:\\Users\\poslu\\OneDrive\\Pulpit\\odnowegocommita\\WhatAndWhenSolution\\WhatAndWhenData\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

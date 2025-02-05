@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fQgm/u+bPqo=",
+  "dgSpecHash": "BhKrMUekfA0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\ASP\\WhatAndWhenSolution\\WhatAndWhen\\WhatAndWhen.csproj",
+  "projectFilePath": "C:\\Users\\poslu\\OneDrive\\Pulpit\\odnowegocommita\\WhatAndWhenSolution\\WhatAndWhen\\WhatAndWhen.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\poslu\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\poslu\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
@@ -58,6 +58,7 @@
     "C:\\Users\\poslu\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\9.0.1\\microsoft.aspnetcore.cryptography.internal.9.0.1.nupkg.sha512",
     "C:\\Users\\poslu\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\9.0.1\\microsoft.aspnetcore.cryptography.keyderivation.9.0.1.nupkg.sha512",
     "C:\\Users\\poslu\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\9.0.1\\microsoft.aspnetcore.identity.entityframeworkcore.9.0.1.nupkg.sha512",
+    "C:\\Users\\poslu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.1\\microsoft.aspnetcore.identity.ui.9.0.1.nupkg.sha512",
     "C:\\Users\\poslu\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.24\\microsoft.aspnetcore.razor.language.6.0.24.nupkg.sha512",
     "C:\\Users\\poslu\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\poslu\\.nuget\\packages\\microsoft.build\\17.10.4\\microsoft.build.17.10.4.nupkg.sha512",
@@ -92,6 +93,8 @@
     "C:\\Users\\poslu\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.1\\microsoft.extensions.dependencyinjection.9.0.1.nupkg.sha512",
     "C:\\Users\\poslu\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.1\\microsoft.extensions.dependencyinjection.abstractions.9.0.1.nupkg.sha512",
     "C:\\Users\\poslu\\.nuget\\packages\\microsoft.extensions.dependencymodel\\9.0.1\\microsoft.extensions.dependencymodel.9.0.1.nupkg.sha512",
+    "C:\\Users\\poslu\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\9.0.1\\microsoft.extensions.fileproviders.abstractions.9.0.1.nupkg.sha512",
+    "C:\\Users\\poslu\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\9.0.1\\microsoft.extensions.fileproviders.embedded.9.0.1.nupkg.sha512",
     "C:\\Users\\poslu\\.nuget\\packages\\microsoft.extensions.identity.core\\9.0.1\\microsoft.extensions.identity.core.9.0.1.nupkg.sha512",
     "C:\\Users\\poslu\\.nuget\\packages\\microsoft.extensions.identity.stores\\9.0.1\\microsoft.extensions.identity.stores.9.0.1.nupkg.sha512",
     "C:\\Users\\poslu\\.nuget\\packages\\microsoft.extensions.logging\\9.0.1\\microsoft.extensions.logging.9.0.1.nupkg.sha512",

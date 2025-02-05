@@ -1,15 +1,15 @@
 [
   {
-    "ContainingType": "WhatAndWhen.Controllers.SubtaskAPIController",
-    "Method": "GetSubtasks",
-    "RelativePath": "api/SubtaskAPI",
+    "ContainingType": "WhatAndWhen.Controllers.CommentAPIController",
+    "Method": "GetComments",
+    "RelativePath": "api/CommentAPI",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[WhatAndWhenData.Entities.SubtaskEntity, WhatAndWhenData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WhatAndWhenData.Entities.CommentEntity, WhatAndWhenData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -20,22 +20,22 @@
     ]
   },
   {
-    "ContainingType": "WhatAndWhen.Controllers.SubtaskAPIController",
-    "Method": "PostSubtaskEntity",
-    "RelativePath": "api/SubtaskAPI",
+    "ContainingType": "WhatAndWhen.Controllers.CommentAPIController",
+    "Method": "PostCommentEntity",
+    "RelativePath": "api/CommentAPI",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "subtaskEntity",
-        "Type": "WhatAndWhenData.Entities.SubtaskEntity",
+        "Name": "commentEntity",
+        "Type": "WhatAndWhenData.Entities.CommentEntity",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "WhatAndWhenData.Entities.SubtaskEntity",
+        "Type": "WhatAndWhenData.Entities.CommentEntity",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -46,9 +46,9 @@
     ]
   },
   {
-    "ContainingType": "WhatAndWhen.Controllers.SubtaskAPIController",
-    "Method": "GetSubtaskEntity",
-    "RelativePath": "api/SubtaskAPI/{id}",
+    "ContainingType": "WhatAndWhen.Controllers.CommentAPIController",
+    "Method": "GetCommentEntity",
+    "RelativePath": "api/CommentAPI/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -61,7 +61,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "WhatAndWhenData.Entities.SubtaskEntity",
+        "Type": "WhatAndWhenData.Entities.CommentEntity",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -72,9 +72,9 @@
     ]
   },
   {
-    "ContainingType": "WhatAndWhen.Controllers.SubtaskAPIController",
-    "Method": "PutSubtaskEntity",
-    "RelativePath": "api/SubtaskAPI/{id}",
+    "ContainingType": "WhatAndWhen.Controllers.CommentAPIController",
+    "Method": "PutCommentEntity",
+    "RelativePath": "api/CommentAPI/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -85,17 +85,17 @@
         "IsRequired": true
       },
       {
-        "Name": "subtaskEntity",
-        "Type": "WhatAndWhenData.Entities.SubtaskEntity",
+        "Name": "commentEntity",
+        "Type": "WhatAndWhenData.Entities.CommentEntity",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WhatAndWhen.Controllers.SubtaskAPIController",
-    "Method": "DeleteSubtaskEntity",
-    "RelativePath": "api/SubtaskAPI/{id}",
+    "ContainingType": "WhatAndWhen.Controllers.CommentAPIController",
+    "Method": "DeleteCommentEntity",
+    "RelativePath": "api/CommentAPI/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

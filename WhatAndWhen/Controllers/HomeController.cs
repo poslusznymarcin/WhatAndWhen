@@ -1,6 +1,8 @@
 using System.Diagnostics;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WhatAndWhen.Models;
+
 
 namespace WhatAndWhen.Controllers
 {
@@ -15,6 +17,7 @@ namespace WhatAndWhen.Controllers
 
         public IActionResult Index()
         {
+            ViewData["LastVisit"] = Response.HttpContext.Items[WhatAndWhen.Middleware.LastVisitMiddleware.CookieName];
             return View();
         }
 
