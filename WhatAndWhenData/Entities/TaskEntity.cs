@@ -40,7 +40,7 @@ namespace WhatAndWhenData.Entities
         public int PriorityId { get; set; }
         [ForeignKey("PriorityId")]
         public PriorityEntity Priority { get; set; }
-        // Dodajemy właściwość nawigacyjną dla komentarzy
-        public ICollection<CommentEntity> Comments { get; set; }
+       
+        
     }
 }

@@ -1,34 +1,38 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using WhatAndWhenData.Entities;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using WhatAndWhenData.Entities;
-using System.Net.Http;
-using System.Threading.Tasks;
+using WhatAndWhen.Models;
 
-namespace WhatAndWhen.Controllers
+namespace WebApplication1.Controllers
 {
     public class CommentsController : Controller
     {
-        // GET: Comments
-        public async Task<IActionResult> Index()
+        // GET: commentsController
+        public ActionResult Index()
         {
             IEnumerable<CommentEntity> comments = null;
 
             using (var client = new HttpClient())
             {
-                // Zmień port na taki, jaki masz u siebie w Visual Studio
                 client.BaseAddress = new Uri("http://localhost:5016/api/");
-                // HTTP GET
-                HttpResponseMessage response = await client.GetAsync("comment");
+                //HTTP GET
+                var responseTask = client.GetAsync("comment");
+                responseTask.Wait();
 
-                if (response.IsSuccessStatusCode)
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
                 {
-                    comments = await response.Content.ReadFromJsonAsync<List<CommentEntity>>();
+                    var readTask = result.Content.ReadFromJsonAsync<List<CommentEntity>>();
+                    readTask.Wait();
+                    comments = readTask.Result;
                 }
                 else //web api sent error response 
                 {
-                    // log response status here..
+                    //log response status here..
+
                     comments = Enumerable.Empty<CommentEntity>();
+
                     ModelState.AddModelError(string.Empty, "Server error. Please contact administrator.");
                 }
             }

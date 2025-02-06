@@ -32,7 +32,7 @@ namespace WhatAndWhen
 
             // Dodanie Session i MemoryCache
             builder.Services.AddSession();
-            builder.Services.AddMemoryCache();
+            builder.Services.AddMemoryCache(); 
 
 
             var app = builder.Build();

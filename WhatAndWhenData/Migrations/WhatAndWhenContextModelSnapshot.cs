@@ -41,15 +41,6 @@ namespace WhatAndWhenData.Migrations
                         .HasDatabaseName("RoleNameIndex");
 
                     b.ToTable("AspNetRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "f729fc3b-b709-aad5-6ba1-b7940a7786f5",
-                            ConcurrencyStamp = "f729fc3b-b709-aad5-6ba1-b7940a7786f5",
-                            Name = "admin",
-                            NormalizedName = "ADMIN"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -137,24 +128,6 @@ namespace WhatAndWhenData.Migrations
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "1e5114dc-e797-72eb-5fb2-976bc939b375",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "05934823-ebfc-4669-91c6-7366955c444f",
-                            Email = "adminuser@whatandwhen.com",
-                            EmailConfirmed = true,
-                            LockoutEnabled = false,
-                            NormalizedEmail = "ADMINUSER@WHATANDWHEN.COM",
-                            NormalizedUserName = "ADMINUSER@WHATANDWHEN.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEG6HAjaB4xSTLDgM8K1P7NOS9lmjheyKxsBRExLvI7BUDHSrk+hQk+f6IugKUOsC5w==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "4ab44496-685f-46a1-9a34-8cba2914ad80",
-                            TwoFactorEnabled = false,
-                            UserName = "adminuser@whatandwhen.com"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -215,13 +188,6 @@ namespace WhatAndWhenData.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = "1e5114dc-e797-72eb-5fb2-976bc939b375",
-                            RoleId = "f729fc3b-b709-aad5-6ba1-b7940a7786f5"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -432,9 +398,9 @@ namespace WhatAndWhenData.Migrations
             modelBuilder.Entity("WhatAndWhenData.Entities.CommentEntity", b =>
                 {
                     b.HasOne("WhatAndWhenData.Entities.TaskEntity", "Task")
-                        .WithMany("Comments")
+                        .WithMany()
                         .HasForeignKey("TaskId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Task");
@@ -457,11 +423,6 @@ namespace WhatAndWhenData.Migrations
                     b.Navigation("Category");
 
                     b.Navigation("Priority");
-                });
-
-            modelBuilder.Entity("WhatAndWhenData.Entities.TaskEntity", b =>
-                {
-                    b.Navigation("Comments");
                 });
 #pragma warning restore 612, 618
         }

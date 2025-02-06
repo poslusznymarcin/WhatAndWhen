@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Text.Json.Serialization;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace WhatAndWhenData.Entities
@@ -22,8 +22,8 @@ namespace WhatAndWhenData.Entities
 
         public int TaskId { get; set; }
 
-        [ForeignKey("TaskId")]
-        [JsonIgnore]
-        public TaskEntity Task { get; set; }
+        
+
+        
     }
 }

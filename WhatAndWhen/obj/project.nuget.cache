@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BhKrMUekfA0=",
+  "dgSpecHash": "U3TCxNWH66g=",
   "success": true,
-  "projectFilePath": "C:\\Users\\poslu\\OneDrive\\Pulpit\\odnowegocommita\\WhatAndWhenSolution\\WhatAndWhen\\WhatAndWhen.csproj",
+  "projectFilePath": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\WhatAndWhenSolutionWersjaOstateczna\\WhatAndWhen\\WhatAndWhen\\WhatAndWhen.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\poslu\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\poslu\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",

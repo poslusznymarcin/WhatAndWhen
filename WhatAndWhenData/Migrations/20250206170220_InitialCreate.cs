@@ -3,18 +3,16 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace WhatAndWhenData.Migrations
 {
     /// <inheritdoc />
-    public partial class AddCommentsToTask : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_comment_task_TaskId",
-                table: "comment");
-
             migrationBuilder.CreateTable(
                 name: "AspNetRoles",
                 columns: table => new
@@ -52,6 +50,34 @@ namespace WhatAndWhenData.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "category",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", maxLength: 50, nullable: false),
+                    Description = table.Column<string>(type: "TEXT", maxLength: 200, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_category", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "priority",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", maxLength: 20, nullable: false),
+                    Level = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_priority", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -160,20 +186,54 @@ namespace WhatAndWhenData.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.InsertData(
-                table: "AspNetRoles",
-                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "4ea8f568-809a-4866-890e-79a4a3a0997d", "4ea8f568-809a-4866-890e-79a4a3a0997d", "admin", "ADMIN" });
+            migrationBuilder.CreateTable(
+                name: "task",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", maxLength: 100, nullable: false),
+                    Description = table.Column<string>(type: "TEXT", maxLength: 500, nullable: false),
+                    deadline = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    Status = table.Column<string>(type: "TEXT", maxLength: 20, nullable: false),
+                    CategoryId = table.Column<int>(type: "INTEGER", nullable: false),
+                    PriorityId = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_task", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_task_category_CategoryId",
+                        column: x => x.CategoryId,
+                        principalTable: "category",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_task_priority_PriorityId",
+                        column: x => x.PriorityId,
+                        principalTable: "priority",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
 
             migrationBuilder.InsertData(
-                table: "AspNetUsers",
-                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "bf9383dd-2afb-46d6-861b-0cd9d1e7c130", 0, "372ee431-6998-4250-b6f5-4be551bbe761", "adminuser@whatandwhen.com", true, false, null, "ADMINUSER@WHATANDWHEN.COM", "ADMINUSER@WHATANDWHEN.COM", "AQAAAAIAAYagAAAAEKddMOExSsLHPyuGUsrB8lQ3TnJ2PdKP0XEA0/cq9d8XCeHFTTMnuwbht4j51fLh/A==", null, false, "f73ebd6c-ebe3-4a9f-b305-4fd3ae7427f9", false, "adminuser@whatandwhen.com" });
+                table: "category",
+                columns: new[] { "Id", "Description", "Name" },
+                values: new object[,]
+                {
+                    { 1, "Tasks related to work", "Work" },
+                    { 2, "Personal tasks", "Personal" }
+                });
 
             migrationBuilder.InsertData(
-                table: "AspNetUserRoles",
-                columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "4ea8f568-809a-4866-890e-79a4a3a0997d", "bf9383dd-2afb-46d6-861b-0cd9d1e7c130" });
+                table: "priority",
+                columns: new[] { "Id", "Level", "Name" },
+                values: new object[,]
+                {
+                    { 1, 1, "Low" },
+                    { 2, 2, "Medium" },
+                    { 3, 3, "High" }
+                });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
@@ -212,22 +272,20 @@ namespace WhatAndWhenData.Migrations
                 column: "NormalizedUserName",
                 unique: true);
 
-            migrationBuilder.AddForeignKey(
-                name: "FK_comment_task_TaskId",
-                table: "comment",
-                column: "TaskId",
-                principalTable: "task",
-                principalColumn: "Id",
-                onDelete: ReferentialAction.Restrict);
+            migrationBuilder.CreateIndex(
+                name: "IX_task_CategoryId",
+                table: "task",
+                column: "CategoryId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_task_PriorityId",
+                table: "task",
+                column: "PriorityId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_comment_task_TaskId",
-                table: "comment");
-
             migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");
 
@@ -244,18 +302,19 @@ namespace WhatAndWhenData.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "task");
+
+            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
 
-            migrationBuilder.AddForeignKey(
-                name: "FK_comment_task_TaskId",
-                table: "comment",
-                column: "TaskId",
-                principalTable: "task",
-                principalColumn: "Id",
-                onDelete: ReferentialAction.Cascade);
+            migrationBuilder.DropTable(
+                name: "category");
+
+            migrationBuilder.DropTable(
+                name: "priority");
         }
     }
 }
