@@ -15,8 +15,8 @@ namespace WhatAndWhenData
 {
     public class WhatAndWhenContext : IdentityDbContext<IdentityUser>
     {
-       
 
+        public WhatAndWhenContext(DbContextOptions<WhatAndWhenContext> options) : base(options) { }
 
         public DbSet<TaskEntity> Tasks { get; set; }
         public DbSet<CommentEntity> Comments { get; set; }
@@ -26,15 +26,6 @@ namespace WhatAndWhenData
 
 
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.ConfigureWarnings(w => w.Ignore(RelationalEventId.PendingModelChangesWarning));
-
-            var folder = Environment.SpecialFolder.LocalApplicationData;
-            var path = Environment.GetFolderPath(folder);
-            var db = System.IO.Path.Join(path, "whatandwhen.db");
-            optionsBuilder.UseSqlite($"Data Source={db}");
-        }
 
 
 

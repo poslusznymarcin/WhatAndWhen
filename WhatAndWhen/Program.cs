@@ -13,8 +13,8 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.File("logs/app-log.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 builder.Host.UseSerilog();
-
-builder.Services.AddDbContext<WhatAndWhenContext>(); // Scoped by default
+builder.Services.AddDbContext<WhatAndWhenContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddRoles<IdentityRole>()
