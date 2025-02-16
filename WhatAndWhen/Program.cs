@@ -19,7 +19,7 @@ namespace WhatAndWhen
 
 
 
-            builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
+            builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<WhatAndWhenContext>();
 
@@ -53,6 +53,17 @@ namespace WhatAndWhen
                 app.UseHsts();
             }
 
+            app.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}/{id?}")
+                .WithStaticAssets();
+
+
+            app.UseAuthorization();
+            app.UseMiddleware<LastVisitMiddleware>();
+            app.MapStaticAssets();
+            app.MapRazorPages();
+
             app.Use(async (context, next) =>
             {
 
@@ -80,16 +91,11 @@ namespace WhatAndWhen
             app.UseHttpsRedirection();
             app.UseRouting();
 
-            app.UseAuthorization();
-            app.UseMiddleware<LastVisitMiddleware>();
-            app.MapStaticAssets();
-            app.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}")
-                .WithStaticAssets();
 
 
-            app.MapRazorPages();
+
+
+
             app.Run();
         }
     }

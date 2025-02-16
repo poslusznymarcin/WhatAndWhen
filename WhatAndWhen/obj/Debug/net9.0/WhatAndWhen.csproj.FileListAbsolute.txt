@@ -1474,3 +1474,16 @@ C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAn
 C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\obj\Debug\net9.0\WhatAndWhen.pdb
 C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\obj\Debug\net9.0\WhatAndWhen.genruntimeconfig.cache
 C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\obj\Debug\net9.0\ref\WhatAndWhen.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll

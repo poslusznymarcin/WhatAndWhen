@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WhatAndWhenData.Entities;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 
 
 namespace WhatAndWhenData
@@ -22,15 +23,17 @@ namespace WhatAndWhenData
         public DbSet<CategoryEntity> Categories { get; set; }
         public DbSet<PriorityEntity> Priorities { get; set; }
 
-        
 
 
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            optionsBuilder.ConfigureWarnings(w => w.Ignore(RelationalEventId.PendingModelChangesWarning));
+
             var folder = Environment.SpecialFolder.LocalApplicationData;
             var path = Environment.GetFolderPath(folder);
             var db = System.IO.Path.Join(path, "whatandwhen.db");
-            options.UseSqlite($"Data Source={db}");
+            optionsBuilder.UseSqlite($"Data Source={db}");
         }
 
 
@@ -50,8 +53,45 @@ namespace WhatAndWhenData
                 new PriorityEntity() { Id = 3, Name = "High", Level = 3 }
             );
 
+            string ADMIN_ID = Guid.NewGuid().ToString();
+            string ROLE_ID = Guid.NewGuid().ToString();
 
-           
+            // dodanie roli administratora
+            modelBuilder.Entity<IdentityRole>().HasData(new IdentityRole
+            {
+                Name = "admin",
+                NormalizedName = "ADMIN",
+                Id = ROLE_ID,
+                ConcurrencyStamp = ROLE_ID
+            });
+
+            // utworzenie administratora jako użytkownika
+            var admin = new IdentityUser
+            {
+                Id = ADMIN_ID,
+                Email = "adminuser@wsei.edu.pl",
+                EmailConfirmed = true,
+                UserName = "adminuser@wsei.edu.pl",
+                NormalizedUserName = "ADMINUSER@WSEI.EDU.PL",
+                NormalizedEmail = "ADMINUSER@WSEI.EDU.PL"
+            };
+
+            // haszowanie hasła, najlepiej wykonać to poza programem i zapisać gotowy
+            // PasswordHash
+            PasswordHasher<IdentityUser> ph = new PasswordHasher<IdentityUser>();
+            admin.PasswordHash = ph.HashPassword(admin, "S3cretPassword");
+
+            // zapisanie użytkownika
+            modelBuilder.Entity<IdentityUser>().HasData(admin);
+
+            // przypisanie roli administratora użytkownikowi
+            modelBuilder.Entity<IdentityUserRole<string>>()
+            .HasData(new IdentityUserRole<string>
+            {
+                RoleId = ROLE_ID,
+                UserId = ADMIN_ID
+            });
+
 
             // Konfiguracja relacji między CommentEntity a TaskEntity
             /* modelBuilder.Entity<CommentEntity>()
@@ -61,7 +101,7 @@ namespace WhatAndWhenData
                    .OnDelete(DeleteBehavior.Restrict);
 
              /*
-
+                
 
                // Dodawanie użytkowników i ról
                string ADMIN_ID = Guid.NewGuid().ToString();
