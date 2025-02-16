@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DH45Cl5VxWE=",
+  "dgSpecHash": "+5DJmYA8Uuk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\WhatAndWhenSolutionWersjaOstateczna\\WhatAndWhen\\WhatAndWhenData\\WhatAndWhenData.csproj",
+  "projectFilePath": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\WhatAndWhenSolutionWersjaOstateczna\\WhatAndWhen\\WhatAndWhen\\WhatAndWhenData\\WhatAndWhenData.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\poslu\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\poslu\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

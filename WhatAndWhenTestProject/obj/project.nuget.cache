@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kXYzuf9qYZM=",
+  "dgSpecHash": "MUza6/WFeBE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\WhatAndWhenSolutionWersjaOstateczna\\WhatAndWhen\\WhatAndWhenTestProject\\WhatAndWhenTestProject.csproj",
+  "projectFilePath": "C:\\Users\\poslu\\OneDrive\\Pulpit\\Studia\\WhatAndWhenSolutionWersjaOstateczna\\WhatAndWhen\\WhatAndWhen\\WhatAndWhenTestProject\\WhatAndWhenTestProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\poslu\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\poslu\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
