@@ -1901,3 +1901,16 @@ C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAn
 C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhen\obj\Debug\net9.0\WhatAndWhen.pdb
 C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhen\obj\Debug\net9.0\WhatAndWhen.genruntimeconfig.cache
 C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhen\obj\Debug\net9.0\ref\WhatAndWhen.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Serilog.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Serilog.AspNetCore.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Serilog.Extensions.Hosting.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Serilog.Extensions.Logging.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Serilog.Formatting.Compact.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Serilog.Settings.Configuration.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Serilog.Sinks.Console.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Serilog.Sinks.File.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhen\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll

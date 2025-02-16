@@ -32,7 +32,13 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Priority" asp-action="Index">Priority</a>
                         </li>
-                        
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="/api/CommentAPi">API Komentarzy</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav">
+                        @await Html.PartialAsync("_LoginPartial")
                     </ul>
                 </div>
             </div>

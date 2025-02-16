@@ -1132,3 +1132,14 @@ C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAn
 C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhenTestProject\obj\Debug\net9.0\WhatAndWhenTestProject.pdb
 C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhenTestProject\obj\Debug\net9.0\WhatAndWhenTestProject.genruntimeconfig.cache
 C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhenTestProject\obj\Debug\net9.0\ref\WhatAndWhenTestProject.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhenTestProject\bin\Debug\net9.0\.msCoverageSourceRootsMapping_WhatAndWhenTestProject
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhenTestProject\bin\Debug\net9.0\CoverletSourceRootsMapping_WhatAndWhenTestProject
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhenTestProject\obj\Debug\net9.0\WhatAndWhenTestProject.csproj.AssemblyReference.cache
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhenTestProject\obj\Debug\net9.0\WhatAndWhenTestProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhenTestProject\obj\Debug\net9.0\WhatAndWhenTestProject.AssemblyInfoInputs.cache
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhenTestProject\obj\Debug\net9.0\WhatAndWhenTestProject.AssemblyInfo.cs
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhenTestProject\obj\Debug\net9.0\WhatAndWhenTestProject.csproj.CoreCompileInputs.cache
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhenTestProject\obj\Debug\net9.0\WhatAndWhenTestProject.sourcelink.json
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhenTestProject\obj\Debug\net9.0\WhatAndWhenTestProject.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhenTestProject\obj\Debug\net9.0\refint\WhatAndWhenTestProject.dll
+C:\Users\poslu\OneDrive\Pulpit\Studia\WhatAndWhenSolutionWersjaOstateczna\WhatAndWhen\WhatAndWhen\WhatAndWhenTestProject\obj\Debug\net9.0\WhatAndWhenTestProject.pdb
