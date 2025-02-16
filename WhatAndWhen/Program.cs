@@ -7,73 +7,62 @@ using Microsoft.AspNetCore.Identity;
 using Serilog;
 using Microsoft.OpenApi.Models;
 
+var builder = WebApplication.CreateBuilder(args);
 
-    
-            var builder = WebApplication.CreateBuilder(args);
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.File("logs/app-log.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+builder.Host.UseSerilog();
 
+builder.Services.AddDbContext<WhatAndWhenContext>(); // Scoped by default
 
-            Log.Logger = new LoggerConfiguration()
-            .WriteTo.File("logs/app-log.txt", rollingInterval: RollingInterval.Day)
-            .CreateLogger();
-            builder.Host.UseSerilog();
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<WhatAndWhenContext>();
 
-            builder.Services.AddDbContext<WhatAndWhenContext>(); // Scoped by default
-            
+// Dodanie innych serwisów
+builder.Services.AddTransient<ITaskService, TaskService>();
 
+// Dodanie kontrolerów z widokami i RazorPages
+builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
 
+// Dodanie Session i MemoryCache
+builder.Services.AddSession();
+builder.Services.AddMemoryCache();
+builder.Services.AddSwaggerGen();
 
-            builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddRoles<IdentityRole>()
-                .AddEntityFrameworkStores<WhatAndWhenContext>();
+var app = builder.Build();
 
-            // Dodanie innych serwisów
-            builder.Services.AddTransient<ITaskService, TaskService>();
+// Konfiguracja potoku HTTP
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
+}
 
-            // Dodanie kontrolerów z widokami i RazorPages
-            builder.Services.AddControllersWithViews();
-            builder.Services.AddRazorPages();
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
+}
 
-            // Dodanie Session i MemoryCache
-            builder.Services.AddSession();
-            builder.Services.AddMemoryCache(); 
-            builder.Services.AddSwaggerGen();
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}")
+    .WithStaticAssets();
 
-            var app = builder.Build();
+app.UseAuthorization();
+app.UseMiddleware<LastVisitMiddleware>();
+app.MapStaticAssets();
+app.MapRazorPages();
 
-            // Konfiguracja potoku HTTP
-            if (!app.Environment.IsDevelopment())
-            {
-                app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
-            }
+app.UseHttpsRedirection();
+app.UseRouting();
 
-
-            // Configure the HTTP request pipeline.
-            if (!app.Environment.IsDevelopment())
-            {
-                app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
-
-            app.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}")
-                .WithStaticAssets();
-
-
-            app.UseAuthorization();
-            app.UseMiddleware<LastVisitMiddleware>();
-            app.MapStaticAssets();
-            app.MapRazorPages();
-
-            
-
-            app.UseHttpsRedirection();
-            app.UseRouting();
-
-
-            using (var scope = app.Services.CreateScope())
+using (var scope = app.Services.CreateScope())
 {
     var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
     var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
@@ -103,6 +92,4 @@ using Microsoft.OpenApi.Models;
     }
 }
 
-
-
-            app.Run();
+app.Run();
